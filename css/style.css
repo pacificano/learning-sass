@@ -1,0 +1,29 @@
+.message, .success, .error, .warning {
+  border: 1px solid blue;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }
+
+h1 {
+  color: #eb1a79;
+  text-decoration: underline; }
+  h1 a {
+    background-color: red;
+    font-size: 200%; }
+
+p {
+  color: #2ecc8f; }
+
+body, html {
+  width: 100%; }
+
+ul {
+  width: 350px; }
