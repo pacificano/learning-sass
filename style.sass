@@ -1,5 +1,5 @@
 @import "Bourbon"
-@import "Neat"
+@import "neat"
 @import font
 @import warning
 
@@ -22,10 +22,10 @@ p
 	color: $text-color
 	font-family: $helvetica
 
+	.absoLo
+		@include position(absolute, 50px null null 200px)
 
 
-body, html
-	width: 100%
 
 ul
 	width: 200px * 2 - 50px
@@ -34,9 +34,21 @@ ul
 
 .prefixerTest
 	background-color: $primary-color
-	width: 600px
-	height: 400px
+	+size(601px 400px)
 	border-radius: 20px
 	display: flex
 	justify-content: center
 	align-items: center
+
+
+
+.boxes
+	+clearfix
+	+outer-container
+
+.box
+	background-color: tint(blue, 40%)
+	margin: 0px
+	+size(100px)
+	float: left
+	+span-columns(3)
